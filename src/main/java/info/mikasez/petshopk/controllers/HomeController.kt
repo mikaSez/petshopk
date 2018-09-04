@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping
 class HomeController {
 
     @GetMapping("/")
-    fun shop(model : Model) : String{
+    fun shop(model: Model): String {
         model["title"] = "My PetShop"
         return "shop"
     }
